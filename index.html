@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="javascript.js"></script>
+        <title>Mejor Con Salud</title>
+        <link rel="icon" type="image/x-icon" href="images/logo__icon.png">
+    </head>
+    <body>
+        <div id="MainBody">
+            <header class="row div__header">
+                <div style="width: fit-content;" class="column dropdown__container">
+                    <button class="button__menu__acciones" Id="ButtonShowMenu" onclick="ShowMenu()">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+                <div style="width: auto; float: right;" class="column">
+                    <img style="margin-right: 8px; "src="images/Logo_Imagen_Header.png">
+                </div>
+            </header> 
+            <div class="hero__main__body" id="DivHeroRotatory">
+                <div class="div__container__menu" id="ContainerMenuButtons">
+                    <button type="button" class="button__acciones--margin button__acciones--aspect" id="BtnFAQ" onclick="ShowModalFAQ()">
+                        <h1 class="h1__text--buttons_menu">FAQ</h1>
+                    </button><br>
+                    <button type="button" class="button__acciones--margin button__acciones--aspect" id="BtnContact" onclick="ShowModalContact()">
+                        <h1 class="h1__text--buttons_menu">Contacto</h1>
+                    </button><br>
+                    <button type="button" class="button__acciones--margin button__acciones--aspect" id="BtnReviews" onclick="ShowModalReviewers()">
+                        <h1 class="h1__text--buttons_menu">Reseñas</h1>
+                    </button><br>
+                    <button type="button" class="button__acciones--margin button__acciones--aspect" id="BtnColseMenu" onclick="HideMenu()">
+                        <h1 class="h1__text--buttons_menu">Cerrar Menu</h1>
+                    </button><br>
+                </div>
+                <div id="ContainerHeroSlogan">
+                    <div class="hero__main__text" id="HeroTextoDiv">
+                        <h1 class="h1__eslogan">
+                            Su viaje de <font style="color:#F778B9;">salud</font><br>
+                            <font style="color:#F778B9;">Emocional</font><br>
+                            empeza aqui<br>
+                        </h1>
+                        <h1 class="h1__title">
+                            Conoce nuestro<br>
+                            nuestro professional con licencia<br>
+                        </h1>
+                        <h1 class="h1__description">
+                            Todos se someten a proceso segurdo de<br>
+                            verficación y acreditación, además de<br>
+                            adherirse a estrictos códigos de ética y<br>
+                            confidencialidad<br>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer__content">
+                <div>
+                    <table class="table__footer--content">
+                        <tbody>
+                            <td>
+                                <img class="img">
+                            </td>
+                            <td>
+                                <h1 class="h1__footer--text">
+                                    La mente is maravillosa is a property of Grupo MContigo<br>
+                                    2012-2020. All rights reserved.<br>
+                                    Los contenidos de esta publicación se redactan solo con fines informativos. En<br>
+                                    ningún momento pueden servir para facilitar diagnósticos o sustituir la labor de<br>
+                                    un professional. Le recomendamos que contacte con su especialista de confianza.<br> 
+                                </h1>
+                            </td>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <table class="table__footer--content">
+                        <tbody>
+                            <tr>
+                                <td class="td__footer--size">
+                                    <h1 class="h1__footer--politics">
+                                        <ul>
+                                            Política de Cookies
+                                        </ul>
+                                    </h1>
+                                </td>
+                                <td class="td__footer--size">
+                                    <h1 class="h1__footer--politics">
+                                        <ul>
+                                            Política de privacidad
+                                        </ul>
+                                    </h1>
+                                </td>
+                                <td class="td__footer--size">
+                                    <h1 class="h1__footer--politics">
+                                        <ul>
+                                            Términos y condiciones de uso
+                                        </ul>
+                                    </h1>
+                                </td>
+                                <td class="td__footer--size">
+                                    <h1 class="h1__footer--politics">
+                                        <ul>
+                                            Cláusula informativa de consentimiento 
+                                        </ul>
+                                    </h1>
+                                </td>
+                            </tr>   
+                        </tbody>
+                    </table>
+                </div>
+            </footer>
+        </div> 
+        <div id="ModalFAQ" class="modal">
+            <div class="div__modal--content">
+                <p>Preguntas frecuentes</p>
+                <button class="div__accordion--container" onclick="FAQAccordionShow()"> 
+                    <span>¿Cuáles son los pasos para tomar una decisión?</span>
+                </button>
+                <div class="panel">
+                    <p>Tomar en cuenta los puntos a trabajar en dicha decisión, sus pro y contras
+                     y el tiempo a trabajar en esta misma.   
+                    </p>
+                </div>
+                <button class="div__accordion--container" onclick="FAQAccordionShow()"> 
+                    <span>¿Qué tipo de valoraciones manejan?</span>
+                </button>
+                <div class="panel">
+                    <p>Contamos con las valoraciones dadas por personal altamente capacitado por el
+                    sector salud correspondiente, brindando un servico de alta calidad para sus
+                    necesidades primordiales.
+                    </p>
+                </div>
+                <button class="div__accordion--container" onclick="FAQAccordionShow()"> 
+                    <span>¿Qué tan importante es la salud mental?</span>
+                </button>
+                <div class="panel">
+                    <p>Es muy importante debido que gracias a ella podemos expresar y sentir
+                    diferentes sensaciones, por ende tambien es de mencionar que nuestra
+                    salud mental tambien es reflejada en nuestro cuerpo y salud.
+                    </p>
+                </div>
+                <button class="div__accordion--container" onclick="FAQAccordionShow()"> 
+                    <span>¿Qué tan largo puede ser un tratamiento?</span>
+                </button>
+                <div class="panel">
+                    <p>Es muy importante saber el tipo de caso y la gravedad, debido a esto se
+                    puede valor el tiempo de terapia que tomara llevar el caso presentado para
+                    tomar un tiempo en especifico para este.
+                    </p>
+                </div>
+                <button class="div__accordion--container" onclick="FAQAccordionShow()"> 
+                    <span>¿Es recomendable una cita virtual?</span>
+                </button>
+                <div class="panel">
+                    <p>Se puede tomar una, pero es recomendable ser una cita presencial, para 
+                    una mejor valoración de nuestro personal altamente capacitado
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="ModalContact" class="modal">
+            <div class="div__modal--content">
+                <div class="div__inputs--margin">
+                    <label for="InputTxtName" class="label__modal--backgroundcolor">Nombre</label>
+                    <input class="input__text--background" type="text" placeholder="Nombre" id="InputTxtName" onchange="GetDataNameModal()"></input>       
+                </div>
+                <div class="div__inputs--margin">
+                    <label for="InputTxtLastName" class="label__modal--backgroundcolor">Apellidos</label>
+                    <input class="input__text--background" type="text" placeholder="Apellidos" id="InputTxtLastName" onchange="GetDataLastNameModal()"></input> 
+                </div>
+                <div class="div__inputs--margin">
+                    <label for="InputTxtEmail" class="label__modal--backgroundcolor">Correo electronico</label>
+                    <input class="input__text--background" type="email" placeholder="Correo electronico" id="InputTxtEmail" onchange="GetDataEmailModal()"></input> 
+                </div>
+                <div class="div__inputs--margin">
+                    <p>Acepta los terminos y condiciones de nuestros servicios</p>
+                    <input type="checkbox" class="input__checkbox--aspect" id="CheckBoxAccept" onchange="GetValueCheckBoxModal()">Sí</input> 
+                </div>
+                <div class="div__inputs--margin">
+                    <select id="SelectRegion" class="select__dropdown--background" onchange="GetValueRegionSelect()">
+                        <option value="Region">Region</option>
+                        <option value="Europa">Europa</option>
+                        <option value="America">America</option>
+                        <option value="Oceania">Oceania</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Africa">Africa</option>
+                    </select>
+                </div>
+                <div class="div__inputs--margin">
+                    <button type="button" class="button__submit--aspect" id="ButtonAccept" disabled="true" onclick="ShowModalAnswer()">Registrar me</button>
+                </div>
+                <div class="div__inputs--margin">
+                    <button type="button" class="button__modal--display" id="BtnCloseModal" onclick="HideModalContact()">No, Gracias</button>
+                </div>
+            </div>
+            <div id="ModalAnswerContactData" class="modal">
+                <div class="div__modal--content">
+                    <p>Usted se ha regitrado con los datos siguientes</p>
+                    <p id="NameDisplayModal"></p>
+                    <p id="EmailDisplayModal"></p>
+                    <p id="RegionDisplayModal"></p>
+                </div>
+            </div>
+        </div>
+        <div id="ModalReviewers" class="modal">
+            <div class="div__modal--content div__modal--size">
+                <div>
+                    <ul class="ul__slider">
+                        <li id="slide1">
+                            <p class="p__text--align">
+                                Me gustaría agradecer al sitio, me ayudó de una manera ínimaginable,<br>
+                                el psicólogo fue sumamente servicial y acogedor conmigo<br>
+                                y me siento mejor conmigo misma.<br>
+                                ~ Maria Montessori ~ <br>
+                            </p>
+                        </li>
+                        <li id="slide2">
+                            <p class="p__text--align">
+                                Personal de alta calidad, me ayudó bastante para mi<br>
+                                superación personal hacia mis problemas<br>
+                                y me siento mejor desde el primer dia.<br>
+                                ~ Jorge Lopez ~ <br>
+                            </p>
+                        </li>
+                        <li id="slide3">
+                            <p class="p__text--align">
+                               Atentos hacia cada detalle presentado durante la<br>
+                               valoración del paciente, instalaciones de primera<br>
+                                y presentación excelente<br>
+                                ~ David LLanos ~ <br>
+                            </p>
+                        </li>
+                        <li id="slide4">
+                            <p class="p__text--align">
+                                Sentí una mejoría constante en relacíon de la terapía<br>
+                                continuaba, atención de primera mano con los professional<br>
+                                sin duda la recomendaría.<br>
+                                ~ Julia Reyes ~ <br>
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="ul__menu--slider">
+                        <li>
+                            <a href="#slide1">1</a>
+                        </li>
+                        <li>
+                            <a href="#slide2">2</a>
+                        </li>
+                        <li>
+                            <a href="#slide3">3</a>
+                        </li>
+                        <li>
+                            <a href="#slide4">4</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
